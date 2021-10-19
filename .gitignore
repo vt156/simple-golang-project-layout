@@ -1,0 +1,34 @@
+# You can remove any rules that overlap with the root .gitignore file.
+
+# binaries
+*.exe
+*.exe~
+*.dll
+# your built binary
+your-entrypoint-1
+# but keep the cmd dir
+!cmd/your-entrypoint-1
+
+# environment files
+*.env.*
+# but keep .example environment files
+!*.example*.env.*
+
+# go.sum file
+go.sum
+
+# directory for big files
+tmp/*
+
+# vi files
+*~
+*.bak
+
+# vscode
+.vscode
+
+# .gitkeep to add empty directories
+!.gitkeep
+
+# readme files
+!README.md
